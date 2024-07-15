@@ -1,6 +1,6 @@
 const UNSPLASH_ACCESS_KEY = 'eL8r2eVKAXndLcCc3Xs7xgfz_GRDdUtCq41DgfCeda0';
 const API_URL = 'https://api.unsplash.com';
-const PER_PAGE = 12;
+const PER_PAGE = 15;
 
 let currentPage = 1;
 let currentQuery = '';
@@ -51,7 +51,7 @@ function displayImages(images) {
 }
 
 function updatePaginationInfo() {
-    document.getElementById('page-info').textContent = `Page ${currentPage}`;
+    document.getElementById('page-info').textContent = `Страница ${currentPage}`;
     document.getElementById('prev-page').disabled = currentPage === 1;
 }
 
